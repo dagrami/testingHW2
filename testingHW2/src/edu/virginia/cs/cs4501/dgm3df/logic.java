@@ -7,6 +7,10 @@ public class logic {
     private int xsize;
     private int ysize;
     Grid my_grid;
+    
+    public void setCellsLeft(int cl) {
+    	this.cells_left = cl;
+    }
 
     public logic(Grid tempGrid) {
         max = 4;//connect 4 or n
@@ -22,7 +26,7 @@ public class logic {
         return check_one(x, y, 0, 1, player) //syd
                 || check_one(x, y, -1, 1, player) //sydvest
                 || check_one(x, y, -1, 0, player) //vest
-                || check_one(x, y, 1, 1, player);//sydøst
+                || check_one(x, y, 1, 1, player);//sydï¿½st
     }
 
     public boolean draw_game() {//checks for draw game

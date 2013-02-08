@@ -24,9 +24,17 @@ public class Grid {
     public int get_cells_left() {
         return cells_left;
     }
+    
+    public void set_cells_left(int _cells_left) {
+    	this.cells_left = _cells_left;
+    }
 
     public int[][] get_matrix() {
         return matrix;
+    }
+    
+    public void set_matrix(int[][] _matrix) {
+    	this.matrix = _matrix;
     }
 
     public boolean matrix_equals(int a, int b, int c) {

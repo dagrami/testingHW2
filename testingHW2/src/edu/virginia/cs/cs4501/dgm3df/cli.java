@@ -21,6 +21,10 @@ public class cli {
     //making of grid and logic
     Grid my_grid = new Grid();
     logic my_logic = new logic(my_grid); //create game logic
+    
+    public void setCurrentPlayer(int _currentPlayer) {
+    	this.currentPlayer = _currentPlayer;
+    }
 
     public cli() {
     }
